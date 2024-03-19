@@ -21,5 +21,7 @@ jobs:
       run: cmake .. 
     - name: make
       run: cmake --build .
+    - name: run test
+      run: ./helloworld
 #    - name: make test
 #      run: make test
