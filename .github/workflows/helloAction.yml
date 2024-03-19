@@ -18,10 +18,10 @@ jobs:
     - name: make build dir
       run: mkdir build && cd build
     - name: configure
-      run: cmake .. 
+      run: cd build && cmake .. 
     - name: make
-      run: cmake --build .
+      run: cd build && cmake --build .
     - name: run test
-      run: ./helloworld
+      run: cd build && ./helloworld
 #    - name: make test
 #      run: make test
